@@ -66,4 +66,8 @@ jspm_packages/
 .env
 
 # Remix specific
-.remix/ 
+.remix/
+
+# Cache directories
+.cache/
+.cache 
