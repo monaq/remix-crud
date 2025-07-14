@@ -8,17 +8,15 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import styles from "./tailwind.css";
-
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: "/tailwind.css" },
 ];
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "QnA Board",
-  viewport: "width=device-width,initial-scale=1",
-});
+export const meta: MetaFunction = () => [
+  { charset: "utf-8" },
+  { title: "QnA Board" },
+  { name: "viewport", content: "width=device-width,initial-scale=1" },
+];
 
 export default function App() {
   return (
